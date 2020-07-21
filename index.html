@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="tin" >
+                      
+    
+
+    </div>
+    <script>
+
+             var timeLeft = 10;
+             var elem = document.getElementById('tin');
+    
+            setInterval(countdown, 1000);
+    
+    function countdown() {
+    if (timeLeft > 0) {
+        elem.innerHTML = timeLeft ;
+        timeLeft--;
+        
+      } else {
+        elem.innerHTML = "Happy new year" ;
+     }
+    }
+
+
+    </script>
+</body>
+</html>
